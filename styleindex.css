@@ -1,0 +1,385 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+}
+
+header .logo {
+    display: block;
+    padding: 25px 50px;
+    width: 75px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin-left: auto;
+    display: flex;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: grey;
+    font-size: 12px;
+    padding: 25px 50px;
+    display: block;
+}
+
+header nav ul li a:hover {
+    color: black;
+}
+
+header nav ul li a:active {
+    opacity: 0.5;
+}
+
+header nav ul .dropdown {
+    position: relative;
+}
+
+header nav ul .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header nav ul .dropdown:after {
+    border-color: lightgrey transparent transparent transparent;
+    border-width: 7px 6px 0 6px;
+    border-style: solid;
+    display: block;
+    content: " ";
+    position: absolute;
+    top: 30px;
+    left: 90px;
+}
+
+header nav ul .dropdown-content {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    left: 30px;
+    background: white;
+    box-shadow: 0 -2px 2px 2px lightgrey;
+    padding: 5px 10px 10px 10px;
+}
+
+header nav ul .dropdown-content li {
+    padding: 5px 0;
+    border-bottom: none !important;
+}
+
+header nav ul .dropdown-content li a {
+    color: darkslategrey;
+    padding: 8px 7px;
+}
+
+header nav ul .dropdown-content li a:hover {
+    color: black;
+}
+
+.banner {
+    background: url(../img/hero1.jpg);
+    padding: 110px 0;
+}
+
+.banner .banner-box {
+    text-align: center;
+}
+
+.banner .banner-box h1 {
+    font-size: 41px;
+}
+
+.banner .banner-box p {
+    font-style: italic;
+}
+
+.text {
+    padding: 20px 0;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.text h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.text-box {
+    text-align: center;
+    width: 98%;
+    margin: 0 1% 10px 1%;
+}
+
+.team {
+    background-color: rgb(243, 243, 243);
+}
+
+.card-box {
+    display: block;
+    padding: 8px 0 8px;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.card-box .card {
+    display: inline-block;
+    margin: 28px 28px 28px 28px;
+}
+
+.card-box .card img {
+    width: 275px;
+}
+
+.card-box2 {
+    display: block;
+    padding: 30px 0 45px;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.card-box2 .card2 {
+    display: inline-block;
+    background-color: white;
+    width: 231px;
+    margin: 8px;
+    padding: 16px 0 8px;
+    box-shadow: 0 2px 2px 2px lightgrey;
+}
+
+.card-box2 .card2 .card-img {
+    width: 90px;
+    height: 90px;
+    border: 3px solid white;
+    border-radius: 50px;
+    box-shadow: 0 2px 1px 1px lightgrey;
+    margin: 0 auto;
+}
+
+.card-box2 .card2 .member1 {
+    background: url(../img/member1.png) no-repeat -20px;
+}
+
+.card-box2 .card2 .member2 {
+    background: url(../img/member2.png) no-repeat;
+}
+
+.card-box2 .card2 .member3 {
+    background: url(../img/member3.png) no-repeat -30px -20px;
+}
+
+.card-box2 .card2 .member4 {
+    background: url(../img/member4.png) no-repeat -60px;
+}
+
+.card-box2 .card-text2 {
+    font-size: 12px;
+}
+
+.card-box2 .card-text2 p {
+    font-style: italic;
+}
+
+.card-box2 .card2 .card-text2 .card3 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.card-box2 .card2 .card-text2 .card3:last-child {
+    margin-right: 0;
+}
+
+.text .card-box .map-box {
+    display: inline-block;
+    width: 34%;
+    text-align: left;
+    margin-right: 3%;
+}
+
+.text .card-box .map-box .map {
+    border: 6px solid white;
+    box-shadow: 0 2px 2px 2px lightgrey;
+}
+
+.text .card-box .msg-box {
+    display: inline-block;
+    width: 61%;
+    text-align: left;
+}
+
+.text .card-box .msg-box:nth-child(4) {
+    display: none;
+}
+
+.text .card-box .msg-box form .text-area {
+    width: 97%;
+    height: 322px;
+    resize: none;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid lightgrey;
+    font-style: italic;
+}
+
+.text .card-box .msg-box form .email {
+    width: 56%;
+    margin-right: 3%;
+    padding: 20px 10px;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid lightgrey;
+    font-style: italic;
+}
+
+.text .card-box .msg-box form button {
+    width: 30%;
+    padding: 20px 10px;
+    outline: none;
+    background-color: slateblue;
+    background-image: url(../img/composite_path.png);
+    background-repeat: no-repeat;
+    background-position: 10% 20px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    box-shadow: 0 2px 2px 2px lightgrey;
+}
+
+.text .card-box .msg-box form button:hover {
+    background-color: mediumslateblue;
+}
+
+.text .card-box .msg-box form button:active {
+    background-color: darkslateblue;
+}
+
+footer {
+    position: relative;
+    background-color: #787878;
+}
+
+footer nav {
+    display: flex;
+    align-items: center;
+}
+
+footer nav ul {
+    margin: 0;
+    padding: 0;
+    margin-right: auto;
+    display: flex;
+}
+
+footer nav ul:last-child {
+    margin-right: 0;
+    display: flex;
+}
+
+footer nav ul li {
+    color: lightgrey;
+    font-size: 14px;
+    padding: 25px 50px;
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    p {
+        font-size: 16px;
+    }
+    header nav .logo {
+        width: 65px;
+        padding: 15px 25px;
+    }
+    header nav ul li a {
+        font-size: 12px;
+        padding: 15px 25px;
+    }
+    header nav ul .dropdown:after {
+        top: 20px;
+        left: 60px;
+    }
+    .card-box .card {
+        display: inline-block;
+        margin: 16px 16px 16px 16px;
+    }
+    footer nav ul li {
+        font-size: 13px;
+        padding: 15px 25px;
+    }
+    .text .card-box .msg-box form button {
+        background-position: 5% 20px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    p {
+        font-size: 14px;
+    }
+    header nav .logo {
+        width: 50px;
+        padding: 10px 15px;
+    }
+    header nav ul li a {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    header nav ul .dropdown:after {
+        top: 15px;
+        left: 55px;
+    }
+    .card-box .card {
+        display: inline-block;
+        margin: 8px 8px 8px 8px;
+    }
+    .card-box .card img {
+        width: 190px;
+    }
+    .card-box2 .card2 {
+        width: 190px;
+    }
+    footer nav ul li {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .text .card-box .map-box {
+        width: 90%;
+        margin-right: 0;
+    }
+    .text .card-box .msg-box {
+        width: 90%;
+    }
+    .text .card-box .msg-box form .email {
+        width: 52%;
+    }
+    .text .card-box .msg-box form button {
+        background-position: 5% 20px;
+    }
+    .text .card-box .msg-box:nth-child(2) {
+        display: none;
+    }
+    .text .card-box .msg-box:nth-child(4) {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .card-box .card img {
+        width: 160px;
+    }
+    .card-box2 .card2 {
+        width: 160px;
+    }
+}
